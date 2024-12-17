@@ -1,0 +1,1 @@
+# this is my SCM2.0 project ( Social/Smart contact Manager)
