@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#title},~{::#content},~{::#scripts})}">
+
+<head>
+    <title id="title">Login</title>
+</head>
+
+<body>
+    <div id="content">
+
+        <div class="grid grid-cols-12 pt-16 ">
+            <div class="col-span-4 md:col-span-3 lg:col-span-3 xl:col-span-4 "></div>
+            <div class="col-span-12 md:col-span-6 lg:col-span-6 xl:col-span-4">
+                <!-- 6 ki space le rahi hai -->
+                <!-- card  -->
+                <div
+                    class="p-6 border-t-4 border-blue-700 bg-white border rounded-lg shadow dark:bg-gray-800 dark:border-blue-700">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center dark:text-white">
+                            Logout</h5>
+                    </div>
+
+                    <!--Form Begin -->
+
+                    <form 
+                    data-th-action="@{'/do-logout'}"
+                    method="post"
+                    >
+
+                       
+                        
+                        <!-- signup Button -->
+                        <div class="mb-3 pt-2 flex justify-center space-x-5">
+                            <button type="submit"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                Logout
+                            </button>
+
+                           
+
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="scripts">
+        console.log("register")
+    </script>
+    <!-- <script src="/src/main/resources/static/javaScript/formValidation.js"></script> -->
+</body>
+
+</html>
